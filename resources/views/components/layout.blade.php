@@ -16,13 +16,13 @@
                 </a>
             </div>
             <div class="space-x-6 font-bold">
-                <a href="">Jobs</a>
-                <a href="">Careers</a>
-                <a href="">Salary</a>
-                <a href="">Companies</a>
+                <a href="" class="hover:text-blue-600 transition-colors delay-75">Jobs</a>
+                <a href="" class="hover:text-blue-600 transition-colors delay-75">Careers</a>
+                <a href="" class="hover:text-blue-600 transition-colors delay-75">Salary</a>
+                <a href="" class="hover:text-blue-600 transition-colors delay-75">Companies</a>
             </div>
             <div>
-                <a href="">Post a Job</a>
+                <a href="" class="hover:text-blue-600 transition-colors delay-75">Post a Job</a>
             </div>
         </nav>
         <main class="mt-10 mb-10 max-w-[986px] mx-auto">
