@@ -1,3 +1,14 @@
-@props(['width'=>42])
+@props(['employer', 'width'=>90])
 
-<img src="https://picsum.photos/id/{{ rand(0, 100) }}/{{ $width }}" alt="" class="rounded-xl">
+@php
+    $logoPath = public_path('storage/' . $employer->logo);
+    $hasLogo = file_exists($logoPath);
+    $fallback = 'https://picsum.photos/id/' . rand(0, 100) . '/' . $width;
+@endphp
+
+<img 
+    src="{{ $hasLogo ? asset('storage/' . $employer->logo) : $fallback }}" 
+    alt="Employer Logo" 
+    class="rounded-xl" 
+    width="{{ $width }}"
+>
